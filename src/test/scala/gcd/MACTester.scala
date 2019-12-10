@@ -5,6 +5,10 @@ package gcd
 import chisel3._
 import chisel3.iotesters.{Driver, PeekPokeTester}
 
+object RunTest extends App{
+  val mac = new MACTester(new MAC)
+}
+
 class MACTester (c : MAC) extends PeekPokeTester(c){
   val cycle = 100
   import scala.util.Random
