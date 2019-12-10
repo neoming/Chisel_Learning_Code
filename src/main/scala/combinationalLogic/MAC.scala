@@ -1,6 +1,6 @@
 // See README.md for license details.
 
-package gcd
+package combinationalLogic
 
 import chisel3._
 /**

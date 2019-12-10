@@ -15,16 +15,6 @@ class PrintingModule extends Module {
   // chisel printf has its own string interpolator too
   printf(p"Print during simulation: IO is $io\n")
 
-  println(s"Print during generation: Input is ${io.in}")
+  printf(s"Print during generation: Input is ${io.in}\n")
 }
 
-class PrintingModuleTester(c: PrintingModule) extends PeekPokeTester(c) {
-  poke(c.io.in, 3)
-  step(5) // circuit will print
-
-  println(s"Print during testing: Input is ${peek(c.io.in)}")
-}
-
-object Main extends App{
-  chisel3.iotesters.Driver( () => new PrintingModule ) { c => new PrintingModuleTester(c) }
-}

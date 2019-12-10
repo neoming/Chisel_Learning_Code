@@ -1,4 +1,4 @@
-// code from 2.1_first_module
+
 package firstModule
 
 import chisel3._
