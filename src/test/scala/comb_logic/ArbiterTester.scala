@@ -1,5 +1,5 @@
 
-package combinationalLogic
+package comb_logic
 
 import chisel3._
 import chisel3.iotesters.PeekPokeTester

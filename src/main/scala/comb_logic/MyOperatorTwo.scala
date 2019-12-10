@@ -1,8 +1,8 @@
-
-package combinationalLogic
+// See README.md for license details.
+package comb_logic
 import chisel3._
 import chisel3.util._
-
+/*this module is to learn the usage of function`Mux` and `cat`*/
 class MyOperatorTwo extends Module{
   val io = IO(new Bundle() {
     val select = Input(Bool())

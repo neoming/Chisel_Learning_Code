@@ -1,5 +1,5 @@
 
-package combinationalLogic
+package comb_logic
 
 import chisel3.assert
 import chisel3.iotesters.Driver

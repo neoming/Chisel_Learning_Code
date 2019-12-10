@@ -1,6 +1,6 @@
 // See README.md for license details.
 
-package combinationalLogic
+package comb_logic
 
 import chisel3._
 import chisel3.iotesters.{Driver, PeekPokeTester}

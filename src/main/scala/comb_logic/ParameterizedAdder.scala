@@ -1,8 +1,8 @@
-
-package combinationalLogic
+// See README.md for license details.
+package comb_logic
 
 import chisel3._
-
+/*this module is to learn how to using chisel to generate parameterized module*/
 class ParameterizedAdder(saturate: Boolean) extends Module {
   val io = IO(new Bundle {
     val in_a = Input(UInt(4.W))

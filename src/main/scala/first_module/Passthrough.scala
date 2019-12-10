@@ -1,5 +1,5 @@
 
-package firstModule
+package first_module
 
 import chisel3._
 

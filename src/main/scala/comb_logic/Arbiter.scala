@@ -1,7 +1,8 @@
-
-package combinationalLogic
+// See README.md for license details.
+package comb_logic
 
 import chisel3._
+/*this module is to learn the `||` `&&` `!` operator*/
 class Arbiter extends Module {
   val io = IO(new Bundle {
     // FIFO
