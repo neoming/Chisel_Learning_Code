@@ -1,0 +1,312 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlCircuitAnnotation",
+    "circuit":{
+      "info":{
+        
+      },
+      "modules":[
+        {
+          "info":{
+            
+          },
+          "name":"MyOperatorTwo",
+          "ports":[
+            {
+              "info":{
+                
+              },
+              "name":"clock",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"reset",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_select",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_input_A",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":4
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_input_B",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":4
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_mux_result",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":4
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_cat_result",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":8
+                }
+              }
+            }
+          ],
+          "body":{
+            "stmts":[
+              {
+                "stmts":[
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"MyOperatorTwo.scala 15:17"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_mux_result",
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"io_select",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"io_input_A",
+                        "tpe":{
+                          "width":{
+                            "width":4
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"io_input_B",
+                        "tpe":{
+                          "width":{
+                            "width":4
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":4
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"MyOperatorTwo.scala 16:17"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_cat_result",
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"io_input_A",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"io_input_B",
+                          "tpe":{
+                            "width":{
+                              "width":4
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":8
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "main":"MyOperatorTwo"
+    }
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~MyOperatorTwo|MyOperatorTwo>io_cat_result",
+    "sources":[
+      "~MyOperatorTwo|MyOperatorTwo>io_input_A",
+      "~MyOperatorTwo|MyOperatorTwo>io_input_B"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~MyOperatorTwo|MyOperatorTwo>io_mux_result",
+    "sources":[
+      "~MyOperatorTwo|MyOperatorTwo>io_select",
+      "~MyOperatorTwo|MyOperatorTwo>io_input_A",
+      "~MyOperatorTwo|MyOperatorTwo>io_input_B"
+    ]
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.stage.InfoModeAnnotation",
+    "modeName":"append"
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.options.TargetDirAnnotation",
+    "directory":"."
+  },
+  {
+    "class":"firrtl.options.OutputAnnotationFileAnnotation",
+    "file":"MyOperatorTwo"
+  },
+  {
+    "class":"firrtl.stage.OutputFileAnnotation",
+    "file":"MyOperatorTwo"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  }
+]

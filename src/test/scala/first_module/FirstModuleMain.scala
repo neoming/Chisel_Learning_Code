@@ -20,11 +20,9 @@ object FirstModuleMain extends App{
 
   def passthroughGeneratorTester() : Unit = {
     println(chisel3.Driver.emitVerilog(new PassthroughGenerator(1)))
-    println(chisel3.Driver.emitVerilog(new PassthroughGenerator(2)))
   }
 
 
   passthroughTester()
   passthroughGeneratorTester()
-  chisel3.iotesters.Driver( () => new PrintingModule ) { c => new PrintingModuleTester(c) }
 }

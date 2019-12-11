@@ -1,0 +1,749 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlCircuitAnnotation",
+    "circuit":{
+      "info":{
+        
+      },
+      "modules":[
+        {
+          "info":{
+            
+          },
+          "name":"ClockExamples",
+          "ports":[
+            {
+              "info":{
+                
+              },
+              "name":"clock",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"reset",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_in",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":10
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_alternateReset",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_alternateClock",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_outImplicit",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":10
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_outAlternateReset",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":10
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_outAlternateClock",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":10
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_outAlternateBoth",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":10
+                }
+              }
+            }
+          ],
+          "body":{
+            "stmts":[
+              {
+                "stmts":[
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 24:22"
+                      }
+                    },
+                    "name":"imp",
+                    "tpe":{
+                      "width":{
+                        "width":10
+                      }
+                    },
+                    "clock":{
+                      "name":"clock",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"imp",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 30:27"
+                      }
+                    },
+                    "name":"_T",
+                    "tpe":{
+                      "width":{
+                        "width":10
+                      }
+                    },
+                    "clock":{
+                      "name":"clock",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"_T",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 36:27"
+                      }
+                    },
+                    "name":"_T_1",
+                    "tpe":{
+                      "width":{
+                        "width":10
+                      }
+                    },
+                    "clock":{
+                      "name":"io_alternateClock",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"_T_1",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 42:24"
+                      }
+                    },
+                    "name":"_T_2",
+                    "tpe":{
+                      "width":{
+                        "width":10
+                      }
+                    },
+                    "clock":{
+                      "name":"io_alternateClock",
+                      "tpe":{
+                        
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "reset":{
+                      "value":0,
+                      "width":{
+                        "width":1
+                      }
+                    },
+                    "init":{
+                      "name":"_T_2",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 26:20"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_outImplicit",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"imp",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 32:28"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_outAlternateReset",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"_T",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 38:28"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_outAlternateClock",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"_T_1",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 44:27"
+                      }
+                    },
+                    "loc":{
+                      "name":"io_outAlternateBoth",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "name":"_T_2",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 25:9"
+                      }
+                    },
+                    "loc":{
+                      "name":"imp",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"reset",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "value":0,
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "fval":{
+                        "name":"io_in",
+                        "tpe":{
+                          "width":{
+                            "width":10
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 31:14"
+                      }
+                    },
+                    "loc":{
+                      "name":"_T",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"io_alternateReset",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "value":0,
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "fval":{
+                        "name":"io_in",
+                        "tpe":{
+                          "width":{
+                            "width":10
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 37:14"
+                      }
+                    },
+                    "loc":{
+                      "name":"_T_1",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"reset",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "value":0,
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "fval":{
+                        "name":"io_in",
+                        "tpe":{
+                          "width":{
+                            "width":10
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"ClockExamples.scala 43:11"
+                      }
+                    },
+                    "loc":{
+                      "name":"_T_2",
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"io_alternateReset",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "value":0,
+                        "width":{
+                          "width":10
+                        }
+                      },
+                      "fval":{
+                        "name":"io_in",
+                        "tpe":{
+                          "width":{
+                            "width":10
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":10
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "main":"ClockExamples"
+    }
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.stage.InfoModeAnnotation",
+    "modeName":"append"
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.options.TargetDirAnnotation",
+    "directory":"."
+  },
+  {
+    "class":"firrtl.options.OutputAnnotationFileAnnotation",
+    "file":"ClockExamples"
+  },
+  {
+    "class":"firrtl.stage.OutputFileAnnotation",
+    "file":"ClockExamples"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  }
+]

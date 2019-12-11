@@ -44,5 +44,5 @@ object combinationalLogicMain extends App {
     testParameterizedAdder()
   }
 
-  testParameterizedAdder()
+  runAllTest()
 }

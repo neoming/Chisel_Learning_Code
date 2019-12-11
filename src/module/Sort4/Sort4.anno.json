@@ -1,0 +1,1351 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlCircuitAnnotation",
+    "circuit":{
+      "info":{
+        
+      },
+      "modules":[
+        {
+          "info":{
+            
+          },
+          "name":"Sort4",
+          "ports":[
+            {
+              "info":{
+                
+              },
+              "name":"clock",
+              "direction":{
+                
+              },
+              "tpe":{
+                
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"reset",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":1
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_in0",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":16
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_in1",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":16
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_in2",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":16
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_in3",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":16
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_out0",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":16
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_out1",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":16
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_out2",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":16
+                }
+              }
+            },
+            {
+              "info":{
+                
+              },
+              "name":"io_out3",
+              "direction":{
+                
+              },
+              "tpe":{
+                "width":{
+                  "width":16
+                }
+              }
+            }
+          ],
+          "body":{
+            "stmts":[
+              {
+                "stmts":[
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 22:15"
+                      }
+                    },
+                    "name":"_T",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"io_in0",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"io_in1",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 22:24"
+                      }
+                    },
+                    "name":"row10",
+                    "value":{
+                      "cond":{
+                        "name":"_T",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"io_in1",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"io_in0",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 22:24"
+                      }
+                    },
+                    "name":"row11",
+                    "value":{
+                      "cond":{
+                        "name":"_T",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"io_in0",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"io_in1",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 30:15"
+                      }
+                    },
+                    "name":"_T_1",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"io_in2",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"io_in3",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 30:24"
+                      }
+                    },
+                    "name":"row12",
+                    "value":{
+                      "cond":{
+                        "name":"_T_1",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"io_in3",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"io_in2",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 30:24"
+                      }
+                    },
+                    "name":"row13",
+                    "value":{
+                      "cond":{
+                        "name":"_T_1",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"io_in2",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"io_in3",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 43:14"
+                      }
+                    },
+                    "name":"_T_2",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"row10",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"row13",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 43:22"
+                      }
+                    },
+                    "name":"row20",
+                    "value":{
+                      "cond":{
+                        "name":"_T_2",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"row13",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"row10",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 43:22"
+                      }
+                    },
+                    "name":"row23",
+                    "value":{
+                      "cond":{
+                        "name":"_T_2",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"row10",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"row13",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 51:14"
+                      }
+                    },
+                    "name":"_T_3",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"row11",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"row12",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 51:22"
+                      }
+                    },
+                    "name":"row21",
+                    "value":{
+                      "cond":{
+                        "name":"_T_3",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"row12",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"row11",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 51:22"
+                      }
+                    },
+                    "name":"row22",
+                    "value":{
+                      "cond":{
+                        "name":"_T_3",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"row11",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"row12",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 59:14"
+                      }
+                    },
+                    "name":"_T_4",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"row20",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"row21",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "info":{
+                        "string":"Sort4.scala 67:14"
+                      }
+                    },
+                    "name":"_T_5",
+                    "value":{
+                      "op":{
+                        
+                      },
+                      "args":[
+                        {
+                          "name":"row22",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        },
+                        {
+                          "name":"row23",
+                          "tpe":{
+                            "width":{
+                              "width":16
+                            }
+                          },
+                          "kind":{
+                            
+                          },
+                          "flow":{
+                            
+                          }
+                        }
+                      ],
+                      "consts":[
+                        
+                      ],
+                      "tpe":{
+                        "width":{
+                          "width":1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "info":{
+                      "infos":[
+                        {
+                          "info":{
+                            "string":"Sort4.scala 60:13"
+                          }
+                        },
+                        {
+                          "info":{
+                            "string":"Sort4.scala 63:13"
+                          }
+                        }
+                      ]
+                    },
+                    "loc":{
+                      "name":"io_out0",
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_4",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"row21",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"row20",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "infos":[
+                        {
+                          "info":{
+                            "string":"Sort4.scala 61:13"
+                          }
+                        },
+                        {
+                          "info":{
+                            "string":"Sort4.scala 64:13"
+                          }
+                        }
+                      ]
+                    },
+                    "loc":{
+                      "name":"io_out1",
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_4",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"row20",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"row21",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "infos":[
+                        {
+                          "info":{
+                            "string":"Sort4.scala 68:13"
+                          }
+                        },
+                        {
+                          "info":{
+                            "string":"Sort4.scala 71:13"
+                          }
+                        }
+                      ]
+                    },
+                    "loc":{
+                      "name":"io_out2",
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_5",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"row23",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"row22",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "info":{
+                      "infos":[
+                        {
+                          "info":{
+                            "string":"Sort4.scala 69:13"
+                          }
+                        },
+                        {
+                          "info":{
+                            "string":"Sort4.scala 72:13"
+                          }
+                        }
+                      ]
+                    },
+                    "loc":{
+                      "name":"io_out3",
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      },
+                      "kind":{
+                        
+                      },
+                      "flow":{
+                        
+                      }
+                    },
+                    "expr":{
+                      "cond":{
+                        "name":"_T_5",
+                        "tpe":{
+                          "width":{
+                            "width":1
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tval":{
+                        "name":"row22",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "fval":{
+                        "name":"row23",
+                        "tpe":{
+                          "width":{
+                            "width":16
+                          }
+                        },
+                        "kind":{
+                          
+                        },
+                        "flow":{
+                          
+                        }
+                      },
+                      "tpe":{
+                        "width":{
+                          "width":16
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "main":"Sort4"
+    }
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Sort4|Sort4>io_out3",
+    "sources":[
+      "~Sort4|Sort4>io_in0",
+      "~Sort4|Sort4>io_in1",
+      "~Sort4|Sort4>io_in3",
+      "~Sort4|Sort4>io_in2"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Sort4|Sort4>io_out0",
+    "sources":[
+      "~Sort4|Sort4>io_in3",
+      "~Sort4|Sort4>io_in2",
+      "~Sort4|Sort4>io_in0",
+      "~Sort4|Sort4>io_in1"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Sort4|Sort4>io_out1",
+    "sources":[
+      "~Sort4|Sort4>io_in2",
+      "~Sort4|Sort4>io_in3",
+      "~Sort4|Sort4>io_in1",
+      "~Sort4|Sort4>io_in0"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Sort4|Sort4>io_out2",
+    "sources":[
+      "~Sort4|Sort4>io_in1",
+      "~Sort4|Sort4>io_in0",
+      "~Sort4|Sort4>io_in2",
+      "~Sort4|Sort4>io_in3"
+    ]
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.stage.InfoModeAnnotation",
+    "modeName":"append"
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.options.TargetDirAnnotation",
+    "directory":"."
+  },
+  {
+    "class":"firrtl.options.OutputAnnotationFileAnnotation",
+    "file":"Sort4"
+  },
+  {
+    "class":"firrtl.stage.OutputFileAnnotation",
+    "file":"Sort4"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  }
+]

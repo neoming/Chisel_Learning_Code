@@ -36,5 +36,5 @@ object Main extends App {
     sort4Test()
   }
 
-  sort4Test()
+  runAllTest()
 }
