@@ -6,8 +6,8 @@ echo "searching package in ${scala_root}"
 function move_file(){
   if [ -f $1 ];then
     mv $1 $2
+    echo "      moving $1 to $2"
   fi
-  echo "      moving $1 to $2"
 }
 
 for package in `ls ${scala_root}` ;do
@@ -22,9 +22,9 @@ for package in `ls ${scala_root}` ;do
 
         # 在目标目录下面根据class名称创建文件夹
         targetPath=${module_root}/${module_name}/
-        echo "      make dir ${targetPath}"
         if [ ! -d ${targetPath} ];then
           mkdir ${targetPath}
+          echo "      make dir ${targetPath}"
         fi
 
         # 将主目录下面的一些输出文件移动到目标文件夹下面
